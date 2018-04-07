@@ -1,0 +1,14 @@
+package pe.edu.cibertec.proyemp.jpa.test;
+
+import javax.persistence.EntityManager;
+
+public class JpaTest {
+	
+	
+	private EntityManager manager;
+	
+	public JpaTest(EntityManager manager){
+		this.manager = manager;
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;pe.edu.cibertec.proyemp.jpa.test.JPATest&apos; to &apos;JpaTest&apos;&#x0D;&#x0A;- Original project: &apos;JPA_Clase1&apos;&#x0D;&#x0A;- Original element: &apos;pe.edu.cibertec.proyemp.jpa.test.JPATest&apos;&#x0D;&#x0A;- Renamed element: &apos;pe.edu.cibertec.proyemp.jpa.test.JpaTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;JPATest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;pe.edu.cibertec.proyemp.jpa.test{JPATest.java[JPATest" matchStrategy="1" name="JpaTest" qualified="false" references="true" similarDeclarations="false" stamp="1522115524951" textual="false" version="1.0"/>
+</session>

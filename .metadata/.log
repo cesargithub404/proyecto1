@@ -1,0 +1,111 @@
+!SESSION 2018-03-26 20:04:08.111 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_162
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-03-26 20:07:24.247
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SUITE'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 10 2018-03-26 20:12:31.653
+!MESSAGE Updating the index from remote failed. ; version: 1.100.0.v20160217-0435
+!STACK 0
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.downloadDatabase(IO.java:171)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerProblemsHistory$UpdateIndexJob.run(ServerProblemsHistory.java:279)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://mirror.switch.ch/eclipse/technology/epp/logging/problems.zip'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:174)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:217)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:119)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	... 6 more
+
+!ENTRY org.eclipse.jpt.common.ui 4 0 2018-03-26 20:32:37.967
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.jpa.ui.internal.details.AbstractJpaDetailsPageManager.getJpaPlatformUi(AbstractJpaDetailsPageManager.java:41)
+	at org.eclipse.jpt.jpa.ui.internal.details.PersistentAttributeDetailsPageManager.buildMappingComposite(PersistentAttributeDetailsPageManager.java:99)
+	at org.eclipse.jpt.jpa.ui.internal.details.PersistentAttributeDetailsPageManager.getMappingComposite(PersistentAttributeDetailsPageManager.java:90)
+	at org.eclipse.jpt.jpa.ui.internal.details.PersistentAttributeDetailsPageManager$PaneTransformer.transform_(PersistentAttributeDetailsPageManager.java:83)
+	at org.eclipse.jpt.jpa.ui.internal.details.PersistentAttributeDetailsPageManager$PaneTransformer.transform_(PersistentAttributeDetailsPageManager.java:1)
+	at org.eclipse.jpt.common.utility.internal.transformer.AbstractTransformer.transform(AbstractTransformer.java:28)
+	at org.eclipse.jpt.common.ui.internal.swt.bindings.PageBookModelBinding.showPage(PageBookModelBinding.java:148)
+	at org.eclipse.jpt.common.ui.internal.swt.bindings.PageBookModelBinding.valueChanged(PageBookModelBinding.java:140)
+	at org.eclipse.jpt.common.ui.internal.swt.bindings.PageBookModelBinding$ValueListener.propertyChanged(PageBookModelBinding.java:116)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTPropertyChangeListenerWrapper.forward(SWTPropertyChangeListenerWrapper.java:34)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTPropertyChangeListenerWrapper.forward(SWTPropertyChangeListenerWrapper.java:1)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTListenerWrapperDelegate.forwardEvents(SWTListenerWrapperDelegate.java:92)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTListenerWrapperDelegate$ForwardEventsRunnable.run(SWTListenerWrapperDelegate.java:81)
+	at org.eclipse.jpt.common.ui.internal.swt.widgets.DisplayTools.execute(DisplayTools.java:169)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTListenerWrapperDelegate.execute(SWTListenerWrapperDelegate.java:72)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTListenerWrapperDelegate.handle(SWTListenerWrapperDelegate.java:63)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTPropertyChangeListenerWrapper.propertyChanged(SWTPropertyChangeListenerWrapper.java:30)
+	at org.eclipse.jpt.common.utility.internal.model.ChangeSupport.firePropertyChanged_(ChangeSupport.java:510)
+	at org.eclipse.jpt.common.utility.internal.model.ChangeSupport.firePropertyChanged(ChangeSupport.java:491)
+	at org.eclipse.jpt.common.utility.internal.model.SingleAspectChangeSupport.firePropertyChanged(SingleAspectChangeSupport.java:156)
+	at org.eclipse.jpt.common.utility.internal.model.AbstractModel.firePropertyChanged(AbstractModel.java:189)
+	at org.eclipse.jpt.common.utility.internal.model.value.AspectPropertyValueModelAdapter.fireAspectChanged(AspectPropertyValueModelAdapter.java:134)
+	at org.eclipse.jpt.common.utility.internal.model.value.AspectAdapter.subjectChanged(AspectAdapter.java:130)
+	at org.eclipse.jpt.common.utility.internal.model.value.AspectAdapter$SubjectListener.propertyChanged(AspectAdapter.java:109)
+	at org.eclipse.jpt.common.utility.internal.model.ChangeSupport.firePropertyChanged_(ChangeSupport.java:510)
+	at org.eclipse.jpt.common.utility.internal.model.ChangeSupport.firePropertyChanged(ChangeSupport.java:491)
+	at org.eclipse.jpt.common.utility.internal.model.SingleAspectChangeSupport.firePropertyChanged(SingleAspectChangeSupport.java:156)
+	at org.eclipse.jpt.common.utility.internal.model.AbstractModel.firePropertyChanged(AbstractModel.java:189)
+	at org.eclipse.jpt.common.utility.internal.model.value.SimplePropertyValueModel.setValue(SimplePropertyValueModel.java:61)
+	at org.eclipse.jpt.jpa.ui.internal.details.AbstractJpaDetailsPageManager.setSubject(AbstractJpaDetailsPageManager.java:47)
+	at org.eclipse.jpt.jpa.ui.internal.views.JpaDetailsView.setJpaSelection(JpaDetailsView.java:225)
+	at org.eclipse.jpt.jpa.ui.internal.views.JpaDetailsView$JpaSelectionListener.propertyChanged(JpaDetailsView.java:191)
+	at org.eclipse.jpt.common.utility.internal.model.ChangeSupport.firePropertyChanged_(ChangeSupport.java:510)
+	at org.eclipse.jpt.common.utility.internal.model.ChangeSupport.firePropertyChanged(ChangeSupport.java:491)
+	at org.eclipse.jpt.common.utility.internal.model.SingleAspectChangeSupport.firePropertyChanged(SingleAspectChangeSupport.java:156)
+	at org.eclipse.jpt.common.utility.internal.model.AbstractModel.firePropertyChanged(AbstractModel.java:189)
+	at org.eclipse.jpt.common.utility.internal.model.value.AbstractDoublePropertyValueModel.wrappedValueModelValueChanged(AbstractDoublePropertyValueModel.java:140)
+	at org.eclipse.jpt.common.utility.internal.model.value.AbstractDoublePropertyValueModel$ValueModelValueListener.propertyChanged(AbstractDoublePropertyValueModel.java:94)
+	at org.eclipse.jpt.common.utility.internal.model.ChangeSupport.firePropertyChanged_(ChangeSupport.java:510)
+	at org.eclipse.jpt.common.utility.internal.model.ChangeSupport.firePropertyChanged(ChangeSupport.java:491)
+	at org.eclipse.jpt.common.utility.internal.model.SingleAspectChangeSupport.firePropertyChanged(SingleAspectChangeSupport.java:156)
+	at org.eclipse.jpt.common.utility.internal.model.AbstractModel.firePropertyChanged(AbstractModel.java:189)
+	at org.eclipse.jpt.common.utility.internal.model.value.SimplePropertyValueModel.setValue(SimplePropertyValueModel.java:61)
+	at org.eclipse.jpt.jpa.ui.internal.selection.JpaTextEditorManager.setJpaSelection(JpaTextEditorManager.java:210)
+	at org.eclipse.jpt.jpa.ui.internal.selection.JpaTextEditorManager$TextEditorSelectionListener.selectionChanged(JpaTextEditorManager.java:230)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2751)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2699)
+	at org.eclipse.jface.text.TextViewer$5.run(TextViewer.java:2678)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4281)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3368)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
